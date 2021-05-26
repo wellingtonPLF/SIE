@@ -1,0 +1,35 @@
+<div style=" color: black;">
+  <div style="display: flex; justify-content: space-around">
+    <mat-icon>pets</mat-icon>
+    <h1 mat-dialog-title>Lista de Compras</h1>
+    <mat-icon>pets</mat-icon>
+  </div>
+  <mat-dialog-content class="mat-typography">
+    <div *ngFor="let item of cart">
+      <div class="produtos_venda">
+        <div>
+          <img class="imgProduto" mat-card-image src="assets/img/{{item.produto.imagem}}">
+        </div>
+        <div class="descricao">
+          <p>{{item.produto.nome}}</p>
+          <ul style="margin-bottom: 2px;" *ngFor="let listQ of item.produto.descricao">
+            <li>{{listQ}}</li>
+          </ul>
+        </div>
+        <div class="delete_count">
+          <div>
+            <p>{{item.qnt}}</p>
+          </div>
+          <div>
+            <button mat-button (click)="removerProduto(item.produto)">
+              <mat-icon>delete_outline</mat-icon>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </mat-dialog-content>
+  <mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close style="background-color: #e2d9d9">Sair</button>
+  </mat-dialog-actions>
+</div>

@@ -1,0 +1,24 @@
+<div class="main_one">
+  <mat-toolbar class="ajustes">
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span style="cursor: default; font-size: 16px">Menu</span>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item>☆ Atualizações ☆</button>
+      <button mat-menu-item>☆ Fale Conosco ☆</button>
+    </mat-menu>
+    <span class="example-spacer"></span>
+    <button mat-icon-button>
+      <mat-icon  [ngClass]="[favColor]" (click)="colorChange()">favorite</mat-icon>
+    </button>
+    <button mat-icon-button routerLink="/listar">
+      <mat-icon>account_circle</mat-icon>
+    </button>
+  </mat-toolbar>
+
+  <app-carousel-slider></app-carousel-slider>
+
+  <app-card-produto></app-card-produto>
+
+</div>

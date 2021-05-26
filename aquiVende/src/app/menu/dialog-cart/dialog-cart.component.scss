@@ -1,0 +1,68 @@
+.contentDialog{
+  background-color: white;
+  border: 5px solid blue;
+  margin-top: 10px;
+}
+
+.produtos_venda{
+  box-shadow: 0.1px 0.1px 2px 2px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  margin: 15px;
+  width: 400px;
+  height: 120px;
+  display: flex;
+}
+
+.imgProduto{
+  border-radius: 10px;
+  margin: 10px 0px 0px 10px;
+  width: 100px;
+  height: 100px;
+}
+
+.descricao{
+  width: 100%;
+  height: 100%;
+  color: black;
+  margin-top: 15px;
+}
+
+.descricao p{
+  padding-left: 15px;
+}
+
+.delete_count{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.delete_count div:first-child{
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100%;
+  margin: 20px 13px 0px 0px;
+}
+
+.delete_count p:first-child{
+  width: 30%;
+  border: 2px dotted #000;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.delete_count :nth-child(2){
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin: 0px 12px 12px 0px;
+}
+
+.delete_count button{
+  border-radius: 5px;
+  color:white;
+  background-color: #d41343;
+}

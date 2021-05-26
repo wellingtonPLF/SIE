@@ -1,0 +1,20 @@
+<div class="div_wholeCards">
+  <div *ngFor="let produto of produtos">
+    <div style="margin: 0px 5px">
+      <div class="produtos_venda">
+        <div class="imgProduto">
+          <img mat-card-image src="assets/img/{{produto.imagem}}">
+        </div>
+        <div class="descricao">
+          <p>{{produto.nome}}</p>
+          <ul style="margin-bottom: 2px;" *ngFor="let listQ of produto.descricao">
+            <li>{{listQ}}</li>
+          </ul>
+        </div>
+        <div class="cartAdd" (click)="inserirNoCart(produto)">
+          <button mat-button>Cart Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

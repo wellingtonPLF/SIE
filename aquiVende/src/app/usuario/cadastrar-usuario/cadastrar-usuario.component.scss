@@ -1,0 +1,33 @@
+.tela_cadastro{
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mat-card-simples{
+  max-width: 300px;
+  background-color: aliceblue;
+  margin-top: 10px;
+}
+
+.card-insercao-usuario{
+  width: 500px;
+  background-color: #f35b5b;
+  margin: 1fr;
+}
+
+.mat-form-simples {
+  margin-left:5px;
+}
+
+.textStyle {
+  color: #f74646;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+.btnAdd{
+  width: 100%;
+  border: 1px solid gray;
+}

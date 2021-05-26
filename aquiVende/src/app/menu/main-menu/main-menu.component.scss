@@ -1,0 +1,33 @@
+.toolbar {
+  display: flex;
+  height: 50px;
+  align-items: center;
+  min-width: 100vw;
+  width: 600px;
+  background-color: #1976d2;
+}
+
+.icon{
+  color: white;
+}
+
+.nav-fill{
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.nav-right{
+  display: flex;
+  justify-content: flex-end;
+  width: 200px;
+  margin-right: 25px;
+}
+
+.nav-right :first-child{
+  padding-right: 30px;
+}
+
+.seuPet:hover{
+  cursor: context-menu;
+}
